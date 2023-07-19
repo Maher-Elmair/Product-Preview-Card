@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fraunces', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    line-height: 1.2;
+}
+
+:root {
+    background-color: #f2e9e2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*small*/
+@media (min-width: 577px) {
+    .container {
+        width: 550px;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* desktop  */
+@media (min-width: 1300px) {
+    .container {
+        width: 1170px;
+    }
+}
+.all {
+    width: 440px;
+    overflow: hidden;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 7px 14px 1px #a3a3a3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 12rem;
+}
+
+.image_desktop {
+    width: 200px;
+}
+
+.image_mobile {
+    display: none;
+}
+
+.text {
+    font-size: 14px;
+    padding: 20px;
+}
+
+.one_text {
+    color: gray;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 15px;
+}
+
+.two_text {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Fraunces';
+    padding-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.there_text {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    color: gray;
+    line-height: 1.5;
+}
+
+.there_text::first-letter {
+    text-transform: capitalize;
+}
+
+.price {
+    padding-bottom: 15px;
+    /* padding-top: 20px; */
+    display: flex;
+}
+
+.now_price {
+    font-weight: 800;
+    font-size: 22px;
+    color: rgb(61, 129, 104);
+}
+
+.old_price {
+    font-size: 10px;
+    text-decoration: line-through;
+    color: gray;
+    padding: 11px 0px 0px 15px;
+}
+
+button {
+    width: 100%;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(61, 129, 104);
+    /* box-shadow: 0 0 3px 0 black; */
+    color: white;
+    transition: 2s;
+}
+
+
+button>i {
+    padding-right: 8px;
+}
+
+button>p {
+    display: inline-block;
+    justify-content: center;
+    font-family: 'Montserrat';
+}
+
+button:hover {
+    transition: 2s;
+    background-color: rgb(26, 64, 49);
+}
+
+button>p::first-letter {
+    text-transform: capitalize;
+}
+
+/* - Mobile: 420px */
+@media only screen and (max-width:460px) {
+    .all {
+        display: block;
+    width: 300px;
+        border-radius: 5px;
+        top: 6rem;
+    }
+
+    .image_desktop {
+        display: none;
+    }
+
+    .image_mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 250%;
+    }
+
+    .text {
+        padding: 15px;
+    }
+
+    .one_text {
+        padding-bottom: 5px;
+    }
+
+    .two_text {
+        padding-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .there_text {
+        font-size: 12px;
+    }
+}
+
+/*! start Attribution */
+.attribution {
+    position: relative;
+    top: 26rem;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.attribution a {
+    font-size: smaller;
+    text-decoration: none;
+    color: rgb(61, 129, 104);
+    text-transform: capitalize;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.attribution a:hover::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    content: "\f0a9";
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+@media (max-width: 460px) {
+    .attribution {
+        position: relative;
+        top: 10rem;
+        white-space: break-spaces;
+        line-height: 2;
+        left: 0;
+        width: -webkit-fill-available;
+    }
+}
+
+/*! end Attribution */
