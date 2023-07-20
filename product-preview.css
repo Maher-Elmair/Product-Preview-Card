@@ -55,6 +55,7 @@ html {
         width: 1170px;
     }
 }
+
 .all {
     width: 440px;
     overflow: hidden;
@@ -166,7 +167,7 @@ button>p::first-letter {
 @media only screen and (max-width:460px) {
     .all {
         display: block;
-    width: 300px;
+        width: 300px;
         border-radius: 5px;
         top: 6rem;
     }
